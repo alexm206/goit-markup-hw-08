@@ -1,0 +1,103 @@
+.page-footer {
+    background-color: $additional-bg-color;
+    padding: 60px 0;
+}
+
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-wrap__logo {
+    color: $primary-white-color;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer-wrap__address {
+    font-style: normal;
+}
+
+.address-list {
+    list-style: none;
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-list__link {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--white {
+        color: $primary-white-color;
+    }
+
+    &:hover, &:focus {
+        color: $accent-link-color;
+    }
+}
+
+.footer-links {
+    margin-left: 70px;
+}
+
+.footer-links__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $primary-white-color;
+    margin-bottom: 20px;
+}
+
+.social-links__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $primary-white-color;
+}
+
+.footer-subscribe {
+    margin-left: auto;
+}
+
+.footer-subscribe__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $primary-white-color;
+}
+
+.footer-subscribe__container,
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $primary-white-color;
+}
+
+.subscribe-form__button {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+
+.button__img {
+    margin-left: 10px;
+    fill: $primary-white-color;
+}
