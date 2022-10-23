@@ -1,15 +1,28 @@
 .projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * $projects-card-gap);
-    margin-top: calc(-1 * $projects-card-gap);
     list-style: none;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * $projects-card-gap);
+        margin-top: calc(-1 * $projects-card-gap);
+    }
 }
 
 .projects-list__item {
-    flex-basis: calc(100% / 3 - $projects-card-gap);
-    margin-left: $projects-card-gap;
-    margin-top: $projects-card-gap;
+    margin: 30px auto;
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - $projects-card-gap);
+        margin-left: $projects-card-gap;
+        margin-top: $projects-card-gap;
+    }
+    
+    @media screen and (min-width: 1600px) {
+        flex-basis: calc(100% / 3 - $projects-card-gap);
+        margin-left: $projects-card-gap;
+        margin-top: $projects-card-gap;
+    }
 }
 
 .projects-list__link {
@@ -19,7 +32,8 @@
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
@@ -39,7 +53,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .projects-list__link:hover &, 
+    .projects-list__link:hover &,
     .projects-list__link:focus & {
         transform: translateY(-100%);
         opacity: 0.9;
@@ -51,7 +65,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 322px;
+    width: 450px;
 
     font-weight: 400;
     font-size: 18px;
@@ -64,6 +78,14 @@
     .projects-list__link:hover &,
     .projects-list__link:focus & {
         opacity: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 370px;
     }
 }
 

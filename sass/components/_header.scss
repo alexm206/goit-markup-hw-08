@@ -5,13 +5,12 @@
     &__container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         min-height: 60px;
         padding: 0 15px;
-    }
-}
+        margin: 0 auto;
 
-.header-navigation {
-    display: flex;
-    align-items: center;
+        @media screen and (max-width: 1599px) {
+            justify-content: space-between;
+        }
+    }
 }

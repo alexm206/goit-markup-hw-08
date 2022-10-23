@@ -1,29 +1,49 @@
 .section-staff {
     background-color: $primary-bg-color;
-    padding: 94px 0;
+    padding: 60px 0;
 }
 
 .section-staff__title {
     color: $secondary-text-color;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .staff-list {
-    display: flex;
     list-style: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .staff-list__item {
-    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:first-child) {
-        margin-left: 30px;
+    @media screen and (max-width: 767px) {
+        &:not(:first-child) {
+                margin-top: 30px;
+            }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+        flex-basis: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 270px;
+       
+        &:not(:first-child) {
+                margin-left: 30px;
+            }
     }
 }
 

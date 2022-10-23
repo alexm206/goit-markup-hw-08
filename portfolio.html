@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> -->
     <link rel="stylesheet" href="./css/portfolio.min.css">
     <title>Portfolio</title>
 </head>
@@ -50,7 +49,70 @@
                     </a>
                 </li>
             </ul>
+            <!-- Menu button -->
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <!-- Mobile-menu -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-button js-close-menu" aria-expanded="true" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <ul class="mobmenu-list mobile-menu__mobmenu-list">
+                        <li class="mobmenu-list__item">
+                            <a href="./index.html" class="mobmenu-list__link">Студія</a>
+                        </li>
+                        <li class="mobmenu-list__item">
+                            <a href="./portfolio.html" class="mobmenu-list__link mobmenu-list__link--current">Портфоліо</a>
+                        </li>
+                        <li class="mobmenu-list__item">
+                            <a href="" class="mobmenu-list__link">Контакти</a>
+                        </li>
+                    </ul>
     
+                    <ul class="mobcontact-list">
+                        <li class="mobcontact-list__item">
+                            <a href="tel:+380961111111" class="mobcontact-list__link">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mobcontact-list__item">
+                            <a href="mailto:info@devstudio.com" class="mobcontact-list__link">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://twitter.com/" class="social-list__link" target="_blank">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.linkedin.com/" class="social-list__link" target="_blank">
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Main -->
@@ -59,7 +121,7 @@
         <section class="section-portfolio">
             <div class="container">
                 <h1 class="section-portfolio__title section-portfolio__title--visually-hidden">Портфоліо</h1>
-                
+                <!-- Filter buttons -->
                 <ul class="filter-list">
                     <li class="filter-list__item">
                         <button type="button" class="button filter-list__button">
@@ -87,13 +149,23 @@
                         </button>
                     </li>
                 </ul>
-
+                <!-- Card set -->
                 <h2 class="section-portfolio__title section-portfolio__title--visually-hidden">Наші проєкти</h2>
                 <ul class="projects-list">
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/technoquack.jpg" alt="Веб сайт Технокряк" width="370">
+                                <picture>
+                                    <source 
+                                    srcset="./images/technoquack-450.jpg 1x, ./images/technoquack-900.jpg 2x"
+                                    media="(max-width: 767px)">
+                                    <source srcset="./images/technoquack-354.jpg 1x, ./images/technoquack-708.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                    <source srcset="./images/technoquack-370.jpg 1x, ./images/technoquack-740.jpg 2x" 
+                                    media="(min-width: 1600px)">
+
+                                    <img src="./images/technoquack.jpg" alt="Веб сайт Технокряк">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -114,7 +186,13 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                <picture>
+                                    <source srcset="./images/poster-450.jpg 1x, ./images/poster-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/poster-354.jpg 1x, ./images/poster-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/poster-370.jpg 1x, ./images/poster-740.jpg 2x" media="(min-width: 1600px)">
+                                
+                                    <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -135,7 +213,13 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/restaurant.jpg" alt="Ресторан Seafood" width="370">
+                                <picture>
+                                    <source srcset="./images/restaurant-450.jpg 1x, ./images/restaurant-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/restaurant-354.jpg 1x, ./images/restaurant-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/restaurant-370.jpg 1x, ./images/restaurant-740.jpg 2x" media="(min-width: 1600px)">
+                                
+                                    <img src="./images/restaurant.jpg" alt="Ресторан Seafood">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -156,7 +240,13 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/project-prime.jpg" alt="Проєкт Prime" width="370">
+                                <picture>
+                                    <source srcset="./images/project-prime-450.jpg 1x, ./images/project-prime-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/project-prime-354.jpg 1x, ./images/project-prime-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/project-prime-370.jpg 1x, ./images/project-prime-740.jpg 2x" media="(min-width: 1600px)">
+                                
+                                    <img src="./images/project-prime.jpg" alt="Проєкт Prime">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -177,7 +267,13 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/project-boxes.jpg" alt="Проєкт Boxes" width="370">
+                                <picture>
+                                    <source srcset="./images/project-boxes-450.jpg 1x, ./images/project-boxes-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/project-boxes-354.jpg 1x, ./images/project-boxes-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/project-boxes-370.jpg 1x, ./images/project-boxes-740.jpg 2x" media="(min-width: 1600px)">
+                                
+                                    <img src="./images/project-boxes.jpg" alt="Проєкт Boxes">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -198,7 +294,13 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370">
+                                <picture>
+                                    <source srcset="./images/inspiration-450.jpg 1x, ./images/inspiration-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/inspiration-354.jpg 1x, ./images/inspiration-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/inspiration-370.jpg 1x, ./images/inspiration-740.jpg 2x" media="(min-width: 1600px)">
+                                
+                                    <img src="./images/inspiration.jpg" alt="Inspiration has no Borders">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -219,7 +321,13 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/limited-edition.jpg" alt="Видання Limited Edition" width="370">
+                                <picture>
+                                    <source srcset="./images/limited-edition-450.jpg 1x, ./images/limited-edition-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/limited-edition-354.jpg 1x, ./images/limited-edition-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/limited-edition-370.jpg 1x, ./images/limited-edition-740.jpg 2x" media="(min-width: 1600px)">
+                                
+                                    <img src="./images/limited-edition.jpg" alt="Видання Limited Edition">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -240,7 +348,16 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/project-lab.jpg" alt="Проєкт LAB" width="370">
+                                <picture>
+                                    <source srcset="./images/project-lab-450.jpg 1x, ./images/project-lab-900.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./images/project-lab-354.jpg 1x, ./images/project-lab-708.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/project-lab-370.jpg 1x, ./images/project-lab-740.jpg 2x"
+                                        media="(min-width: 1600px)">
+                                
+                                    <img src="./images/project-lab.jpg" alt="Проєкт LAB">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -261,7 +378,13 @@
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
                             <div class="projects-list__thumb">
-                                <img src="./images/growing-business.jpg" alt="Growing Business" width="370">
+                                <picture>
+                                    <source srcset="./images/growing-business-450.jpg 1x, ./images/growing-business-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/growing-business-354.jpg 1x, ./images/growing-business-708.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/growing-business-370.jpg 1x, ./images/growing-business-740.jpg 2x" media="(min-width: 1600px)">
+                                
+                                    <img src="./images/growing-business.jpg" alt="Growing Business">
+                                </picture>
                                 <div class="projects-list__overlay">
                                     <div class="projects-list__desc">
                                         <p>
@@ -355,5 +478,9 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -56,7 +56,6 @@
                     >
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
-                    <!-- <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use> -->
                 </svg>
             </button>
             <!-- Mobile-menu -->
@@ -85,19 +84,36 @@
 
                     <ul class="mobcontact-list">
                         <li class="mobcontact-list__item">
-                            <a href="mailto:info@devstudio.com" class="mobcontact-list__link">
-                                <svg class="mobcontact-list__icon" width="16px" height="12px">
-                                    <use href="./images/sprite.svg#icon-mail"></use>
-                                </svg>
-                                info@devstudio.com
+                            <a href="tel:+380961111111" class="mobcontact-list__link">
+                                +38 096 111 11 11
                             </a>
                         </li>
                         <li class="mobcontact-list__item">
-                            <a href="tel:+380961111111" class="mobcontact-list__link">
-                                <svg class="mobcontact-list__icon" width="10px" height="16px">
-                                    <use href="./images/sprite.svg#icon-phone"></use>
-                                </svg>
-                                +38 096 111 11 11
+                            <a href="mailto:info@devstudio.com" class="mobcontact-list__link">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://twitter.com/" class="social-list__link" target="_blank">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.linkedin.com/" class="social-list__link" target="_blank">
+                                Linkedin
                             </a>
                         </li>
                     </ul>
@@ -235,7 +251,11 @@
             <ul class="activities-list">
                 <li class="activities-list__item">
                     <div class="activities-list__thumb">
-                        <img src="./images/programming.jpg" alt="programer-working" width="370">
+                        <img 
+                        srcset="./images/desktop-370.jpg 1x, ./images/desktop-740.jpg 2x"
+                        src="./images/desktop-370.jpg" 
+                        alt="programer-working" 
+                        width="370">
                         <div class="activities-list__desc">
                             <p>Десктопні додатки</p>
                         </div>
@@ -243,7 +263,11 @@
                 </li>
                 <li class="activities-list__item">
                     <div class="activities-list__thumb">
-                        <img src="./images/creating.jpg" alt="designers-are-developing" width="370">
+                        <img 
+                        srcset="./images/mobile-370.jpg 1x, ./images/mobile-740.jpg 2x"
+                        src="./images/mobile-370.jpg" 
+                        alt="designers-are-developing" 
+                        width="370">
                         <div class="activities-list__desc">
                             <p>Мобільні додатки</p>
                         </div>
@@ -251,7 +275,11 @@
                 </li>
                 <li class="activities-list__item">
                     <div class="activities-list__thumb">
-                        <img src="./images/design.jpg" alt="creative-artist-web-design" width="370">
+                        <img 
+                        srcset="./images/design-370.jpg 1x, ./images/design-740.jpg 2x"
+                        src="./images/design-370.jpg" 
+                        alt="creative-artist-web-design" 
+                        width="370">
                         <div class="activities-list__desc">
                             <p>Дизайнерські рішення</p>
                         </div>
@@ -266,7 +294,12 @@
             <h2 class="section-staff__title">Наша команда</h2>
             <ul class="staff-list">
                 <li class="staff-list__item">
-                    <img src="./images/igor.jpg" alt="Product designer" width="270">
+                    <img 
+                    srcset="./images/igor-450.jpg 1x, ./images/igor-900.jpg 2x"
+                    src="./images/igor-450.jpg" 
+                    alt="Product designer" 
+                    width="450">
+                    
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Ігор Дем'яненко</h3>
                         <p class="staff-list__desc">Product Designer</p>
@@ -303,7 +336,11 @@
                     </div>
                 </li>
                 <li class="staff-list__item">
-                    <img src="./images/olga.jpg" alt="Frontend Developer" width="270">
+                    <img 
+                    srcset="./images/olga-450.jpg 1x, ./images/olga-900.jpg 2x"
+                    src="./images/olga-450.jpg" 
+                    alt="Frontend Developer" 
+                    width="450">
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Ольга Рєпіна</h3>
                         <p class="staff-list__desc">Frontend Developer</p>
@@ -340,7 +377,11 @@
                     </div>
                 </li>
                 <li class="staff-list__item">
-                    <img src="./images/nicolas.jpg" alt="Marketing" width="270">
+                    <img 
+                    srcset="./images/nicolas-450.jpg 1x, ./images/nicolas-900.jpg 2x"
+                    src="./images/nicolas.jpg" 
+                    alt="Marketing" 
+                    width="450">
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Микола Тарасов</h3>
                         <p class="staff-list__desc">Marketing</p>
@@ -377,7 +418,11 @@
                     </div>
                 </li>
                 <li class="staff-list__item">
-                    <img src="./images/michael.jpg" alt="UI Designer" width="270">
+                    <img 
+                    srcset="./images/michael-450.jpg 1x, ./images/michael-900.jpg 2x"
+                    src="./images/michael.jpg" 
+                    alt="UI Designer" 
+                    width="450">
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Михайло Єрмаков</h3>
                         <p class="staff-list__desc">UI Designer</p>
@@ -532,6 +577,9 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
