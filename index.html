@@ -63,7 +63,7 @@
                 <button type="button"
                         class="menu-button js-close-menu"
                         aria-expanded="true"
-                        aria-controls="menu-container"
+                        aria-controls="mobile-menu"
                         data-menu-button>
                     <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
@@ -294,12 +294,17 @@
             <h2 class="section-staff__title">Наша команда</h2>
             <ul class="staff-list">
                 <li class="staff-list__item">
-                    <img 
-                    srcset="./images/igor-450.jpg 1x, ./images/igor-900.jpg 2x"
-                    src="./images/igor-450.jpg" 
-                    alt="Product designer" 
-                    width="450">
-                    
+                    <picture>
+                        <source 
+                        srcset="./images/igor-450.jpg 1x, ./images/igor-900.jpg 2x"
+                        media="(max-width: 767px">
+                        <source srcset="./images/igor-354.jpg 1x, ./images/igor-708.jpg 2x"
+                        media="(min-width: 768px">
+                        <source srcset="./images/igor-270.jpg 1x, ./images/igor-540.jpg 2x"
+                        media="(min-width: 1600px">
+
+                        <img src="./images/igor.jpg" alt="Product designer">
+                    </picture>
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Ігор Дем'яненко</h3>
                         <p class="staff-list__desc">Product Designer</p>
@@ -336,11 +341,13 @@
                     </div>
                 </li>
                 <li class="staff-list__item">
-                    <img 
-                    srcset="./images/olga-450.jpg 1x, ./images/olga-900.jpg 2x"
-                    src="./images/olga-450.jpg" 
-                    alt="Frontend Developer" 
-                    width="450">
+                    <picture>
+                        <source srcset="./images/olga-450.jpg 1x, ./images/olga-900.jpg 2x" media="(max-width: 767px">
+                        <source srcset="./images/olga-354.jpg 1x, ./images/olga-708.jpg 2x" media="(min-width: 768px">
+                        <source srcset="./images/olga-270.jpg 1x, ./images/olga-540.jpg 2x" media="(min-width: 1600px">
+                    
+                        <img src="./images/olga.jpg" alt="Frontend Developer">
+                    </picture>
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Ольга Рєпіна</h3>
                         <p class="staff-list__desc">Frontend Developer</p>
@@ -377,11 +384,13 @@
                     </div>
                 </li>
                 <li class="staff-list__item">
-                    <img 
-                    srcset="./images/nicolas-450.jpg 1x, ./images/nicolas-900.jpg 2x"
-                    src="./images/nicolas.jpg" 
-                    alt="Marketing" 
-                    width="450">
+                    <picture>
+                        <source srcset="./images/nicolas-450.jpg 1x, ./images/nicolas-900.jpg 2x" media="(max-width: 767px">
+                        <source srcset="./images/nicolas-354.jpg 1x, ./images/nicolas-708.jpg 2x" media="(min-width: 768px">
+                        <source srcset="./images/nicolas-270.jpg 1x, ./images/nicolas-540.jpg 2x" media="(min-width: 1600px">
+                    
+                        <img src="./images/nicolas.jpg" alt="Marketing">
+                    </picture>
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Микола Тарасов</h3>
                         <p class="staff-list__desc">Marketing</p>
@@ -418,11 +427,13 @@
                     </div>
                 </li>
                 <li class="staff-list__item">
-                    <img 
-                    srcset="./images/michael-450.jpg 1x, ./images/michael-900.jpg 2x"
-                    src="./images/michael.jpg" 
-                    alt="UI Designer" 
-                    width="450">
+                    <picture>
+                        <source srcset="./images/michael-450.jpg 1x, ./images/michael-900.jpg 2x" media="(max-width: 767px">
+                        <source srcset="./images/michael-354.jpg 1x, ./images/michael-708.jpg 2x" media="(min-width: 768px">
+                        <source srcset="./images/michael-270.jpg 1x, ./images/michael-540.jpg 2x" media="(min-width: 1600px">
+                    
+                        <img src="./images/nicolas.jpg" alt="UI Designer">
+                    </picture>
                     <div class="staff-list__wrap">
                         <h3 class="staff-list__title">Михайло Єрмаков</h3>
                         <p class="staff-list__desc">UI Designer</p>

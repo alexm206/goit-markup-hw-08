@@ -1,6 +1,6 @@
 .section-staff {
     background-color: $primary-bg-color;
-    padding: 60px 0;
+    // padding: 60px 0;
 }
 
 .section-staff__title {
@@ -10,6 +10,11 @@
     line-height: 1.2;
     text-align: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1600px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 .staff-list {

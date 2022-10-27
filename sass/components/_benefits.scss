@@ -1,6 +1,10 @@
 .section-benefits {
     line-height: 1.7;
     padding: 60px 0;
+
+    @media screen and (min-width: 1600px) {
+        padding: 94px 0;
+    }
 }
 
 .section-benefits__title--visually-hidden {
@@ -57,6 +61,5 @@
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 10px;
-    text-align: center;
     line-height: 1.1;
 }

@@ -58,6 +58,8 @@
                     url(../images/1600/hero-bg-1600@2x.jpg);
             }
         }
+
+            padding: 200px 0;
     }
 
     .section-hero__title {
@@ -69,7 +71,7 @@
         text-transform: uppercase;
         margin: 0 auto 30px auto;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             width: 360px;
         }
         

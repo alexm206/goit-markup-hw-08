@@ -30,6 +30,10 @@
 }
 
 // Mobile menu navigation
+.mobile-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .mobmenu-list {
     list-style: none;
@@ -37,11 +41,12 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .mobmenu-list__link {
     text-decoration: none;
-    color: inherit;
+    color: $secondary-text-color;
 }
 
 .mobmenu-list__link--current {
@@ -54,7 +59,7 @@
 
 .mobcontact-list {
     list-style: none;
-    margin-top: 300px;
+    // margin-top: 300px;
 
 
     font-weight: 500;
@@ -80,6 +85,7 @@
     display: flex;
     margin-top: 64px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .social-list__item {
