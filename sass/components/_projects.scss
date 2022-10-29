@@ -18,7 +18,7 @@
         margin-top: $projects-card-gap;
     }
     
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         flex-basis: calc(100% / 3 - $projects-card-gap);
         margin-left: $projects-card-gap;
         margin-top: $projects-card-gap;
@@ -84,7 +84,7 @@
         width: 354px;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         width: 370px;
     }
 }

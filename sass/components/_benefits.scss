@@ -2,7 +2,7 @@
     line-height: 1.7;
     padding: 60px 0;
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         padding: 94px 0;
     }
 }
@@ -31,15 +31,19 @@
 }
 
 .benefits-list__item {
-    @media screen and (min-width: 768px) and (max-width: 1599px) {
+    color: $primary-text-color;
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-basis: calc((100% - 4 * 15px) / 2);
         width: 354px;
         margin: 15px;
     }
-    
-    color: $primary-text-color;
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         width: 270px;
         &:not(:first-child) {
               margin-left: 30px;
