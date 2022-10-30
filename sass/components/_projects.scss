@@ -65,7 +65,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 80%;
 
     font-weight: 400;
     font-size: 18px;
@@ -80,13 +80,13 @@
         opacity: 1;
     }
 
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     width: 354px;
+    // }
 
-    @media screen and (min-width: 1200px) {
-        width: 370px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     width: 370px;
+    // }
 }
 
 .projects-list__content {
@@ -99,7 +99,7 @@
 .projects-list__title {
     color: $secondary-text-color;
     font-weight: 700;
-    font-size: 18;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }

@@ -52,6 +52,10 @@
     background-color: transparent;
     color: #000000;
     cursor: pointer;
+
+    &:focus {
+        outline: 1px solid $accent-link-color;
+    }
 }
 
 .button-close__icon {
@@ -111,6 +115,10 @@
     @media screen and (min-width: 1200px) {
         width: 448px;
     }
+
+    .modal-form__field:focus-within &{
+        outline: 1px solid $accent-link-color;
+    }
 }
 
 .modal-form__label {
@@ -158,6 +166,10 @@
     @media screen and (min-width: 1200px) {
         width: 448px;
     }
+
+    .modal-form__field:focus-within & {
+        outline: 1px solid $accent-link-color;
+    }
 }
 
 ::placeholder {
@@ -173,6 +185,7 @@
     display: flex;
     align-items:center;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .privacy-checkbox__input {
@@ -201,6 +214,10 @@
         background-color: $accent-link-color;
         color: $primary-white-color;
         border-color: $accent-link-color;
+    }
+
+    .privacy-checkbox:focus-within &{
+        border: 1px solid $accent-link-color;
     }
 }
 

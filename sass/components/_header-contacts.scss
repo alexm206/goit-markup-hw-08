@@ -18,6 +18,19 @@
     }
 }
 
+.contact-list__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+        &:first-child {
+            padding-top: 21px;
+        }
+    
+        &:last-child {
+            padding-bottom: 21px;
+        }
+    }
+}
+
 .contact-list__link {
     display: flex;
     align-items: center;
@@ -36,12 +49,13 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
+        padding: 32px 0;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .contact-list__item:not(:last-child) {
-        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
 }
 
