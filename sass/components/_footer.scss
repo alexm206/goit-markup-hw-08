@@ -25,6 +25,7 @@
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .footer-subscribe {
@@ -37,7 +38,6 @@
     .footer-line {
         display: flex;
         margin-bottom: 60px;
-        margin-left: 75px;
     }
 
     .footer-wrap {

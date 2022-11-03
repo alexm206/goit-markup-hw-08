@@ -683,6 +683,7 @@ body {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .footer-subscribe {
     margin-left: auto;
@@ -693,7 +694,6 @@ body {
   .footer-line {
     display: flex;
     margin-bottom: 60px;
-    margin-left: 75px;
   }
   .footer-wrap {
     margin-right: 165px;
